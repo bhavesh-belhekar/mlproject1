@@ -99,6 +99,7 @@ class ModelTrainer:
                 list(model_report.values()).index(best_model_score)
                 ]
             
+            print(f"Best model selected: {best_model_name}")
             best_model = models[best_model_name]
 
             if best_model_score < 0.6:
